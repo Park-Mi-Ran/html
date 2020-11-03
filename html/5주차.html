@@ -1,0 +1,103 @@
+<!-- 
+02. Mobile-base structure
+-->
+<html>
+<head>
+<title>MySNS</title>
+<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0">
+<style type="text/css">
+* { }
+body{
+	margin:0px;
+	text-align:left;
+}
+.font_arial{ font-family : Arial; }
+.section {
+	float: left;
+	width: 100%;
+} 
+#header-area h3 {
+	margin :0px;
+	text-align: center;
+	background-color:#36D;
+	color: white;
+	line-height : 50px;
+}
+#menu-area{
+	border-bottom: 1px solid #DDD;
+
+}
+
+#menu-area ul {
+	padding-left: 0px;
+
+}
+#menu-area li {
+	list-style: none; 
+	margin:0 10px;
+	float: left;
+	font-size:0.95em;
+	font-weight: bolder;
+	list-style:none;
+
+}
+#footer-area {
+	height : 50px;
+	background-color:#EEE;
+	color:#555;
+	font-size : 0.8em;
+	margin-top: 30px;
+	border-top : 1px solid #DDD;
+	line-height : 50px;
+	cente
+}
+#contents-area p{
+	margin:15px 10px;
+}
+.image{
+	position: relative;
+	overflow: hidden;
+	background-position:50%; <!-- 한가운데 맞춤-->
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+.image:before{
+	content:'';
+	display: block;
+	width:100%;
+	padding-bottom:75%;<!-- padding영역에 그림 삽입-->
+} <!--정사각형-->
+
+</style>
+</head>
+<body>
+<div id="header-area" class="section">
+	<h3>MySNS</h3>
+</div>
+<div id="menu-area" class="section">
+	<ul>
+		<li>Messages</li>
+		<li>Friends</li>
+		<li>About</li>
+	</ul>
+</div>
+<div id="contents-area" class="section">
+	<div class="image" style="background-image:url('images/Desert.jpg')"></div>
+	<p>
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+	</p>
+	<div class="image" style="background-image:url('images/Tulips.jpg')"></div>
+	<p>
+		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+	</p>
+	<div class="image" style="background-image:url('images/Penguins.jpg')"></div>
+	<p>
+		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+	</p>
+</div>
+<div id="footer-area" class="section">
+	Copyright: MySNS.com, 2017
+</div>
+</body>
+</html>
